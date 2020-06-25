@@ -1,0 +1,117 @@
+
+  /* General format for body */
+ body {
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background:#ffffff;
+    justify-content: space-between;
+ }
+
+ /* Format for navigating sections on top */
+ nav {
+    background: white;
+    width: 250px;
+    margin-left: 15px;
+    font-family: "Lucida Console", Courier;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+/* Creating grid for the main section */ 
+main {
+    background: #d6d4b7;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 100px 1fr 50px 1fr 100px;
+}
+
+/* placing welcome text in grid */
+main div {
+    grid-row: 1 / span 3;
+    grid-column: 2;
+    justify-self: center;
+}
+
+/* Image general */
+main img {
+    height: 420px;
+    filter: grayscale(100%);
+}
+
+/* placing image in grid */
+main img {
+    grid-row: 1 / span 3;
+    grid-column: 4;
+    justify-self: center;
+}
+
+/* format for main message */
+.welcome_title {
+    font-size: 40px;
+    font: 40px Impact, Gadget, sans-serif;    
+}
+
+/* format for secondary message */
+.hello_txt {
+    font-size: 20px;
+    font: 20px Helvetica, Arial;
+    border-color: black;
+    line-height: 1.4;
+}
+
+/* footer general */
+footer {
+    background: white;
+}
+
+  /* Icon distribution in footer */
+footer div {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Social media general */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+ 
+/* Fading when hovering on social media icons */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Twitter specific */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* facebok specific*/
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+ 
+  /* instagram specific*/
+   .fa-instagram {
+    background: #da5543;
+    color: #ffffff;
+  }
+
+   /* hithub specific*/
+   .fa-github {
+    background: #000000;
+    color: #ffffff;
+  } 
+
